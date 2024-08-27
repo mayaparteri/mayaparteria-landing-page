@@ -1,0 +1,178 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  min-width: 300px;
+  gap: 30px;
+}
+
+.mobileNav {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 11;
+
+  background: var(--background);
+
+  padding: 20px;
+  gap: 30px;
+
+  width: 100%;
+  min-width: 300px;
+
+  transition: transform 200ms ease-in-out;
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+.mobileNav .logoContainer {
+  justify-content: space-between;
+}
+
+.mobileNav[data-open="false"] {
+  display: flex;
+  transform: translateY(-100%);
+}
+
+.mobileNav[data-open="true"] {
+  display: flex;
+  transform: translateY(0%);
+}
+
+.mobileNavMenuWrapper {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.mobileNavMenuImage {
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: initial;
+  outline: var(--primary);
+}
+
+.mobileNavCloseWrapper {
+  all: unset;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.buttonStyle {
+  all: unset;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 350px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  text-wrap: nowrap;
+  padding: 10px;
+  background-color: transparent;
+  border-width: 5px;
+  border-color: transparent;
+  border-style: solid;
+  color: var(--font-color-secondary);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: color 300ms ease, border 200ms ease;
+}
+
+.buttonStyle:hover {
+  border: 5px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.logo {
+  color: var(--secondary);
+  text-wrap: nowrap;
+  font-size: 40px;
+  text-shadow: 1px 1px 1px var(--secondary);
+}
+
+.logo span {
+  padding: 5px 5px 5px 0;
+  background-color: var(--primary);
+  color: white;
+  width: auto;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px var(--shadow);
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-width: 100px;
+}
+@media (max-width: 1110px) {
+  .main {
+    flex-direction: column;
+    padding: 25px;
+  }
+  .logoContainer {
+    justify-content: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 875px) {
+  .main {
+    gap: 15px;
+  }
+
+  .buttons {
+    gap: initial;
+  }
+
+  .buttonStyle {
+    font-size: 14px;
+  }
+}
+/* Mobile style */
+@media (max-width: 710px) {
+  .buttonStyle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .buttonStyle {
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+}

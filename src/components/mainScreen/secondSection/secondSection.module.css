@@ -1,0 +1,247 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+.content {
+  z-index: 2;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--font-color-secondary);
+  font-size: 40px;
+
+  font-weight: bolder;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 5px;
+}
+.imageBackground {
+  position: absolute;
+  opacity: 0.7;
+  bottom: 3px;
+  background: linear-gradient(
+    180deg,
+    rgba(231, 233, 224, 0) 0%,
+
+    rgba(10, 104, 71, 0.7) 100%
+  );
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+.descriptionContainer {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  background-color: var(--primary);
+  margin-top: 10px;
+  padding: 5px;
+  line-height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.titleContainer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: sepia() hue-rotate(120deg);
+  -webkit-backdrop-filter: sepia() hue-rotate(120deg);
+  transition: transform 200ms ease-in;
+}
+.titleContainer p {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  word-break: break-word;
+  text-align: center;
+  text-shadow: 1px 1px 3px var(--shadow);
+}
+
+.modalDescription {
+  text-align: justify;
+  padding-top: 20px;
+  text-align: justify;
+  padding-top: 20px;
+  letter-spacing: -1px;
+  text-wrap: wrap;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.modalDescription > p {
+  padding: 7px 0;
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  transition: transform 200ms ease-in;
+  cursor: pointer;
+}
+
+.imageContainer:hover {
+  transform: scale(1.1);
+  .descriptionContainer {
+    display: initial;
+  }
+  .titleContainer {
+    transform: scale(1.2);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  overflow-y: auto;
+  max-width: 550px;
+  max-height: 500px;
+  background-image: linear-gradient(
+    180deg,
+    var(--primary) 60%,
+    rgb(233, 140, 2, 0.85) 100%
+  );
+  margin-top: 10px;
+  padding: 10px 25px 35px;
+  gap: 10px;
+  line-height: 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+/* This will affect the entire page */
+.modal::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+.modal::-webkit-scrollbar-track {
+  background: var(--primary); /* color of the tracking area */
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: var(--secondary); /* color of the scroll thumb */
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #ff9900; /* color of the scroll thumb when hovering */
+}
+
+.closeButton {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.closeButton:hover {
+  background: #076360;
+}
+
+.closeButton:active {
+  background: #007672;
+}
+
+.closeButton img {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin: auto;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 870px) {
+  .title {
+    font-size: 30px;
+  }
+  .imageContainer {
+    width: 100%;
+    gap: 10px;
+  }
+  .titleContainer p {
+    font-size: 14px;
+  }
+  .image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 647px) {
+  .title {
+    font-size: 30px;
+  }
+  .titleContainer p {
+    font-size: 20px;
+  }
+  .imagesContainer {
+    flex-direction: column;
+    max-width: 515px;
+    width: 100%;
+    gap: 10px;
+  }
+  .imageContainer {
+    height: 170px;
+    width: 100%;
+  }
+
+  .imageBackground {
+    bottom: 0;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 515px) {
+  .titleContainer p {
+    font-size: 18px;
+    word-spacing: initial;
+  }
+}
+
+@media (max-width: 375px) {
+  .titleContainer p {
+    font-size: 14px;
+  }
+}
