@@ -26,4 +26,10 @@ export const dizziness = {
     "<p>Dormir e acordar com a sensação de desequilíbrio, medo de cair, evitar sair de casa e andar sempre na companhia de alguém, são situações inseridas na rotina de quem sofre com sintomas de tontura.</p> <p>A tontura tem inúmeras causas e duas das principais são abordadas pela fisioterapia especializada em tontura.</p> <p>Na maioria dos casos a razão dos sintomas de tontura está relacionada a VPPB, sigla dada para a tontura causada por cristais soltos dentro da orelha, ou a Hipofunção Vestibular, que consiste no mal funcionamento do labirinto.</p> <p>Essas são às principais causas dos sintomas de tontura e desequilíbrio no mundo, sendo de fácil diagnóstico e rápido tratamento em consultório fisioterapêutico.</p> <p>Agende uma avaliação conosco e descubra como votar a experimentar a liberdade na sua rotina, sem restrições, sem medo, com estabilidade e segurança para se deslocar.</p>",
 };
 
-export const itemsArray = [persistentPain, tinnitus, dizziness];
+export const itemsArray = [
+  persistentPain,
+  tinnitus,
+  dizziness,
+  dizziness,
+  dizziness,
+];

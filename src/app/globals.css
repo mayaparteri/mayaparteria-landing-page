@@ -73,3 +73,14 @@ h1 {
     align-items: flex-end;
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--font-color-secondary) !important;
+  background-color: var(--primary);
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50px;
+  padding: 10px;
+  opacity: 0.9;
+}
