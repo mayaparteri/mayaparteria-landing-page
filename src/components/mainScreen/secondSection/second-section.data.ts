@@ -1,4 +1,4 @@
-import houseWork from "@mayaparteria/assets/Trabalho_de_parto_em_casa.webp";
+import houseWork from "@mayaparteria/assets/Trabalho_de_Parto_em_Casa.webp";
 import pre from "@mayaparteria/assets/Pré-Natal.webp";
 import Furo_Humanizado from "@mayaparteria/assets/furo_humanizado.webp";
 import breastFeeding from "@mayaparteria/assets/breastfeeding.webp";
