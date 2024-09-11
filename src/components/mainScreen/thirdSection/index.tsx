@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./thirdSection.module.css";
 import Image from "next/image";
-import clinc from "@mayaparteria/assets/tratamento.webp";
+import clinc from "@mayaparteria/assets/equipment.webp";
 import graphIcon from "@mayaparteria/assets/graph.svg";
-import focusIcon from "@mayaparteria/assets/focus.svg";
-import certificateIcon from "@mayaparteria/assets/cerficate.svg";
+import healthCertificateIcon from "@mayaparteria/assets/health-certificate.svg";
+import refreshIcon from "@mayaparteria/assets/refresh.svg";
 import peopleIcon from "@mayaparteria/assets/people.svg";
 import shieldIcon from "@mayaparteria/assets/shield.svg";
 
@@ -13,35 +13,65 @@ function ThirdSection() {
     <div className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Por que sou{" "}
-          <span style={{ color: "var(--secondary)" }}>a melhor escolha</span>{" "}
-          para seu tratamento?
+          Por que escolher nossa equipe?
+          {/* <span style={{ color: "var(--secondary)" }}>a melhor escolha</span>{" "} */}
         </h1>
         <ul className={styles.listContainer}>
           <li className={styles.list}>
-            <Image src={focusIcon} width={40} height={40} alt="check icon" />
-            Especialização no tratamento de condições complexas.
+            <Image src={peopleIcon} width={40} height={40} alt="check icon" />
+            <p>
+              <span className={styles.listHighlight}>
+                Atendimento em dupla:
+              </span>{" "}
+              Sempre contamos com duas enfermeiras obstetras dedicadas para
+              oferecer um cuidado completo e seguro durante o parto.
+            </p>
           </li>
           <li className={styles.list}>
-            <Image src={peopleIcon} width={40} height={40} alt="check icon" />
-            Abordagem personalizada e holística.
+            <div style={{ all: "unset", width: 40, height: 40 }}>
+              <Image
+                src={healthCertificateIcon}
+                width={40}
+                height={40}
+                alt="check icon"
+              />
+            </div>
+
+            <p>
+              <span className={styles.listHighlight}>
+                Formação de excelência:
+              </span>{" "}
+              Nossa especialização em obstetrícia foi realizada em uma das
+              melhores universidades do Brasil, com residência focada no
+              atendimento de qualidadea.
+            </p>
           </li>
           <li className={styles.list}>
             <Image src={graphIcon} width={40} height={40} alt="check icon" />
-            Técnicas avançadas.
+
+            <p>
+              <span className={styles.listHighlight}>Técnicas avançadas:</span>{" "}
+              Utilizamos métodos inovadores para manejar partos desafiadores com
+              segurança e eficiência.
+            </p>
           </li>
           <li className={styles.list}>
-            <Image
-              src={certificateIcon}
-              width={40}
-              height={40}
-              alt="check icon"
-            />
-            Resultados documentados.
+            <Image src={refreshIcon} width={40} height={40} alt="check icon" />
+            <p>
+              <span className={styles.listHighlight}>
+                Atualização contínua:
+              </span>{" "}
+              Estamos sempre em busca das práticas mais recentes e eficazes para
+              garantir o melhor atendimento.
+            </p>
           </li>
           <li className={styles.list}>
             <Image src={shieldIcon} width={40} height={40} alt="check icon" />
-            Atualização contínua.
+            <p>
+              <span className={styles.listHighlight}>Suporte contínuo:</span>{" "}
+              Oferecemos acompanhamento via WhatsApp para responder suas dúvidas
+              e fornecer suporte a qualquer momento.
+            </p>
           </li>
         </ul>
       </div>

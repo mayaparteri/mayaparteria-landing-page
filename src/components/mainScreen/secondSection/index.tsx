@@ -32,7 +32,7 @@ function SecondSection() {
 
   return (
     <div className={styles.container}>
-      <p className={styles.title}>Procedimentos</p>
+      <p className={styles.title}>Serviços</p>
       <Swiper
         slidesPerView={getResponsiveSlidePerView()}
         navigation={{

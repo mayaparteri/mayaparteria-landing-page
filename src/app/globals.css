@@ -8,15 +8,15 @@
   --background: #f7f7f7;
 
   --primary: #a2af9f;
-  /* #a2a67d; */
   --secondary: #c9633b;
-  /* #b85d3a; */
 
   --font-color: #fafaed;
   --font-color-secondary: #7b8250;
 
   --white: white;
   --shadow: #b88571;
+  --green: #a2a67d;
+  --orange: #b85d3a;
 }
 
 * {

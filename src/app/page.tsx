@@ -26,7 +26,7 @@ export default function Home() {
         />
         <FirstSection />
       </section>
-      <section id="procedimentos" className={styles.secondarySection}>
+      <section id="serviços" className={styles.secondarySection}>
         <SecondSection />
       </section>
       <section id="diferenciais" className={styles.mainSection}>
@@ -35,10 +35,10 @@ export default function Home() {
       <section id="depoimentos" className={styles.secondarySection}>
         <ForthSection />
       </section>
-      <section id="sobre_mim" className={styles.profileSection}>
+      <section id="sobre nós" className={styles.profileSection}>
         <FifthSection />
       </section>
-      <FloatingButton />
+      {/* <FloatingButton /> */}
       <Footer />
     </main>
   );

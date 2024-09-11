@@ -66,12 +66,12 @@ function Header() {
               Inicio
             </button>
           </a>
-          <a href="#procedimentos">
+          <a href="#serviços">
             <button
               className={styles.buttonStyle}
               onClick={() => setOpenMobileNav(false)}
             >
-              Procedimentos
+              Serviços
             </button>
           </a>
           <a href="#diferenciais">
@@ -92,12 +92,12 @@ function Header() {
             </button>
           </a>
 
-          <a href="#sobre_mim">
+          <a href="#sobre nós">
             <button
               className={styles.buttonStyle}
               onClick={() => setOpenMobileNav(false)}
             >
-              Sobre mim
+              Sobre nós
             </button>
           </a>
         </div>

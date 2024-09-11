@@ -1,35 +1,45 @@
-import BackImage from "@mayaparteria/assets/pic4.webp";
-import ear from "@mayaparteria/assets/ear.webp";
-import neck from "@mayaparteria/assets/pic5.webp";
+import houseWork from "@mayaparteria/assets/Trabalho_de_parto_em_casa.webp";
+import pre from "@mayaparteria/assets/Pré-Natal.webp";
+import Furo_Humanizado from "@mayaparteria/assets/furo_humanizado.webp";
+import breastFeeding from "@mayaparteria/assets/breastfeeding.webp";
+import laser from "@mayaparteria/assets/laser.webp";
 
-/* Dor persistente. */
-export const persistentPain = {
-  image: BackImage,
-  title: "Dor Persistente",
-  description:
-    "<p>Limitar a sua rotina e evitar atividades pode ser muito frustante quando a causa é aquela dor persistente que te acompanha há meses ou anos.</p> <p>A frustração é ainda maior quando recorremos a inúmeros profissionais, medicações e terapias sem sucesso.</p> <p>Na maioria das vezes o problema da dor persistente não está no paciente e sim no diagnóstico. Nem sempre o local da dor é o local do problema.</p> <p>Realizando um escaneamento clínico (avaliação física detalhada), avaliando todas as possibilidades relacionadas a persistência dos sintomas, identificando e corrigindo a real causa.</p> <p>Muitas vezes aquela dor persistente no joelho tem origem na lombar, ou aquela dor persistente no ombro pode ter origem na cervical.<p/> <p>Não deixe que as dores continuem limitando a sua rotina e tirando a sua qualidade de vida. Entre em contato conosco, agende uma avaliação e entenda como podemos ajudar você a recuperar seu bem estar.</p>",
+const partialHousework = {
+  image: houseWork,
+  title: "Trabalho de parto em casa",
+  description: `<p>O acompanhamento do trabalho de parto no domicílio é pensado para que você chegue à maternidade com dilatação e progressão avançada, "quase parindo". Ideal para quem deseja um parto humanizado, mesmo em ambiente hospitalar, essa opção minimiza intervenções desnecessárias, como indicações infundadas de cesariana. Este serviço inclui encontros pré-natais, avaliação contínua do bem-estar materno-fetal e do progresso do trabalho de parto, além do uso de técnicas para alívio da dor e transferência segura quando necessário.</p>`,
 };
 
-/*Zumbido*/
-export const tinnitus = {
-  image: ear,
-  title: "Zumbido",
+const breastfeeding = {
+  image: breastFeeding,
+  title: "Consultoria de amamentação",
   description:
-    "<p>Imagine poder voltar a dormir bem, se concentrar no trabalho e curtir seus momentos de lazer sem aquele ruído constante.</p> <p>O zumbido constante pode ser muito frustrante e prejudicar sua qualidade de vida. Muitas vezes, esse incômodo está relacionado a problemas na Articulação Temporomandibular (ATM), que é a articulação que conecta a mandíbula ao crânio, permitindo os movimentos de abrir e fechar a boca.</p> <p>Se o seu zumbido está relacionado a disfunções na ATM, problemas no pescoço ou nos músculos da cabeça, a fisioterapia pode ser a chave para aliviar esses sintomas. Nossos especialistas têm ajudado muitas pessoas a reduzir ou até eliminar o zumbido, proporcionando um alívio significativo e melhorando a qualidade de vida. Não deixe que o zumbido continue atrapalhando sua vida. Entre em contato conosco e descubra como podemos ajudar você a recuperar seu bem-estar e tranquilidade.</p>",
+    "<p>Nossa consultoria domiciliar de amamentação é dedicada a superar os desafios que podem surgir nesse processo tão importante. Sabemos que a dor ao amamentar é uma das principais causas do desmame precoce, por isso, focamos em otimizar a experiência, observando e ajustando a conexão entre mãe e bebê, garantindo uma amamentação confortável e eficaz.</p>",
 };
 
-/* Tontura */
-export const dizziness = {
-  image: neck,
-  title: "Tontura",
+const laserterapia = {
+  image: laser,
+  title: "Laserterapia",
   description:
-    "<p>Dormir e acordar com a sensação de desequilíbrio, medo de cair, evitar sair de casa e andar sempre na companhia de alguém, são situações inseridas na rotina de quem sofre com sintomas de tontura.</p> <p>A tontura tem inúmeras causas e duas das principais são abordadas pela fisioterapia especializada em tontura.</p> <p>Na maioria dos casos a razão dos sintomas de tontura está relacionada a VPPB, sigla dada para a tontura causada por cristais soltos dentro da orelha, ou a Hipofunção Vestibular, que consiste no mal funcionamento do labirinto.</p> <p>Essas são às principais causas dos sintomas de tontura e desequilíbrio no mundo, sendo de fácil diagnóstico e rápido tratamento em consultório fisioterapêutico.</p> <p>Agende uma avaliação conosco e descubra como votar a experimentar a liberdade na sua rotina, sem restrições, sem medo, com estabilidade e segurança para se deslocar.</p>",
+    "<p>A laserterapia de baixa potência é uma solução eficaz para tratar feridas, aliviando a dor e acelerando a cicatrização. Indicada para mamilos fissurados, infecções como mastite e candidíase, ingurgitamento e ductos mamários obstruídos, além de pontos da cesárea e lacerações perineais. Quando aplicada em casos relacionados à amamentação, a laserterapia é sempre acompanhada por nossa Consultoria de Amamentação, para tratar a causa raiz do problema, garantindo um processo mais saudável e tranquilo.</p>",
 };
 
+const preNatal = {
+  image: pre,
+  title: "Pré-Natal",
+  description:
+    "<p>O nosso acompanhamento inclui consultas regulares durante toda a gestação, visando garantir uma gestação saudável e segura para a mãe e para o bebê. Durante o pré-natal, avaliamos o desenvolvimento fetal e a saúde materna através de requisição de exames, orientações sobre todo o processo de gestar e parir, suporte emocional e esclarecimento de dúvidas. Com uma abordagem cuidadosa e individualizada, esse serviço é essencial para a manutenção do bem estar materno-fetal e para um desfecho positivo, minimizando os riscos na gravidez e parto.</p>",
+};
+const humanized = {
+  image: Furo_Humanizado,
+  title: "Furo Humanizado",
+  description:
+    "<p>O furo de orelha humanizado é um serviço com atendimento personalizado que prioriza o conforto e a segurança do bebê durante todo o processo. Utilizamos técnicas para garantir um procedimento suave e minimamente desconfortável, além de um ambiente acolhedor e uma abordagem atenciosa. Também oferecemos orientações claras sobre os cuidados pós-furo, para assegurar uma cicatrização rápida e eficiente. Com o serviço humanizado, cada etapa é realizada com empatia e respeito, tornando a experiência mais tranquila e agradável.</p>",
+};
 export const itemsArray = [
-  persistentPain,
-  tinnitus,
-  dizziness,
-  dizziness,
-  dizziness,
+  partialHousework,
+  breastfeeding,
+  laserterapia,
+  preNatal,
+  humanized,
 ];
