@@ -5,16 +5,13 @@ import styles from "./fifthSection.module.css";
 import Image from "next/image";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
-import profile from "@mayaparteria/assets/profile-pic.png";
+import profile from "@mayaparteria/assets/about-us.png";
 
 function FifthSection() {
   const [isOpen, setOpen] = useState(false);
 
   return (
     <>
-      {/* TODO: create a modal (global component) and use with this ModalVideo (as children)
-      @see
-    */}
       {/* <ModalVideo
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}
@@ -43,14 +40,21 @@ function FifthSection() {
 
           <article className={styles.articleListWrapper}>
             <p>
-              Somos quatro enfermeiras obstetras formadas pelo programa de
-              residência da Universidade Estadual do Rio de Janeiro. Descobrimos
-              juntas o sonho de tornar a gestação, o parto e o puerpério uma
-              jornada mais leve e tranquila e mostrar às mulheres que parto não
-              é sinônimo de sofrimento. A Maya Parteria nasceu com o intuito de
-              levar uma assistência humanizada, atualizada, baseada em
-              evidências científicas e individualizada para cada cliente. Conte
-              com a gente!
+              Somos quatro enfermeiras obstetras formadas pelo{" "}
+              <span className={styles.listHighlight}>
+                programa de residência da Universidade Estadual do Rio de
+                Janeiro.
+              </span>
+              Descobrimos juntas o sonho de tornar a gestação, o parto e o
+              puerpério uma jornada{" "}
+              <span className={styles.listHighlight}>mais leve </span>e
+              tranquila e mostrar às mulheres que parto{" "}
+              <span className={styles.listHighlight}>
+                não é sinônimo de sofrimento.
+              </span>{" "}
+              A Maya Parteria nasceu com o intuito de levar uma assistência
+              humanizada, atualizada, baseada em evidências científicas e
+              individualizada para cada cliente. Conte com a gente!
             </p>
           </article>
         </div>

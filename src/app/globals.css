@@ -8,15 +8,15 @@
   --background: #f7f7f7;
 
   --primary: #a2af9f;
-  --secondary: #c9633b;
+  --secondary: #db864d;
 
-  --font-color: #fafaed;
+  --font-color: #f4e0bc;
   --font-color-secondary: #7b8250;
 
-  --white: white;
+  --white: #fafaed;
   --shadow: #b88571;
   --green: #a2a67d;
-  --orange: #b85d3a;
+  --orange: #c9633b;
 }
 
 * {
@@ -47,6 +47,9 @@ p {
 
 h1 {
   color: white;
+}
+img {
+  pointer-events: none;
 }
 
 .ReactModal__Overlay {

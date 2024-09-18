@@ -18,7 +18,6 @@
 .title {
   color: var(--font-color-secondary);
   font-size: 40px;
-
   font-weight: bolder;
 }
 
@@ -70,13 +69,13 @@
   backdrop-filter: sepia();
   -webkit-backdrop-filter: sepia();
   transition: transform 200ms ease-in;
-  padding: 5px;
-  background: var(--font-color-secondary);
-  border-radius: 5px;
+  padding: 7px;
+  background: var(--secondary);
+  border-radius: 30px;
 }
 .slideTitle {
-  color: var(--white);
-  font-size: 18px;
+  color: var(--font-color);
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
   word-break: break-word;
@@ -85,7 +84,7 @@
 }
 
 .modalTitle {
-  color: var(--white);
+  color: var(--font-color);
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -146,16 +145,12 @@
   overflow-y: auto;
   max-width: 550px;
   max-height: 500px;
-  background-image: linear-gradient(
-    180deg,
-    var(--primary) 60%,
-    var(--orange) 100%
-  );
+  background: var(--primary);
   margin-top: 10px;
   padding: 10px 25px 35px;
   gap: 10px;
   line-height: 20px;
-  border-radius: 5px;
+  border-radius: 35px;
   align-items: center;
   justify-content: center;
   opacity: 1;

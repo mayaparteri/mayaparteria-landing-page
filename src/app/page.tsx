@@ -38,7 +38,7 @@ export default function Home() {
       <section id="sobre nós" className={styles.profileSection}>
         <FifthSection />
       </section>
-      {/* <FloatingButton /> */}
+      <FloatingButton />
       <Footer />
     </main>
   );

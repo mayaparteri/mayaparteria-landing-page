@@ -12,10 +12,14 @@ function ThirdSection() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>
-          Por que escolher nossa equipe?
-          {/* <span style={{ color: "var(--secondary)" }}>a melhor escolha</span>{" "} */}
-        </h1>
+        <p className={styles.title}>
+          Por que escolher
+          <span style={{ color: "var(--font-color)", fontWeight: "bold" }}>
+            {" "}
+            nossa equipe
+          </span>
+          ?
+        </p>
         <ul className={styles.listContainer}>
           <li className={styles.list}>
             <Image src={peopleIcon} width={40} height={40} alt="check icon" />
@@ -23,8 +27,8 @@ function ThirdSection() {
               <span className={styles.listHighlight}>
                 Atendimento em dupla:
               </span>{" "}
-              Sempre contamos com duas enfermeiras obstetras dedicadas para
-              oferecer um cuidado completo e seguro durante o parto.
+              Contamos com duas enfermeiras obstetras dedicadas para oferecer um
+              cuidado completo e seguro durante o parto
             </p>
           </li>
           <li className={styles.list}>
@@ -42,8 +46,8 @@ function ThirdSection() {
                 Formação de excelência:
               </span>{" "}
               Nossa especialização em obstetrícia foi realizada em uma das
-              melhores universidades do Brasil, com residência focada no
-              atendimento de qualidadea.
+              melhores universidades do Brasil, na modalidade de residência, em
+              dedicação exclusiva.
             </p>
           </li>
           <li className={styles.list}>
