@@ -129,16 +129,6 @@
   justify-content: center;
 }
 
-.imageContainer:hover {
-  transform: scale(1.1);
-  .descriptionContainer {
-    display: initial;
-  }
-  .titleContainer {
-    transform: scale(1.2);
-  }
-}
-
 .modal {
   position: absolute;
   top: 20%;

@@ -1,37 +1,15 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import styles from "./fifthSection.module.css";
 import Image from "next/image";
-import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 import profile from "@mayaparteria/assets/about-us.png";
 
 function FifthSection() {
-  const [isOpen, setOpen] = useState(false);
-
   return (
     <>
-      {/* <ModalVideo
-        channel="youtube"
-        youtube={{ mute: 0, autoplay: 0 }}
-        isOpen={isOpen}
-        videoId="0s39n9_555U"
-        onClose={() => setOpen(false)}
-      /> */}
       <div className={styles.container}>
-        <div
-          title="Olá sou o Samer, seu fisioterapeuta!"
-          className={styles.profileWrapper}
-          // onClick={() => setOpen(true)}
-        >
+        <div className={styles.profileWrapper} title="Somos Maya, Prazer!">
           <Image src={profile} alt="profile" className={styles.profileImage} />
-          {/* <Image
-            src={playBtnImg}
-            title="Clique para saber mais!"
-            alt="saiba mais"
-            className={styles.profilePlayBtn}
-          /> */}
         </div>
         <div className={styles.articleWrapper}>
           <div className={styles.titleWrapper}>
