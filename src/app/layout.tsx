@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <meta property="og:image" content="./icon.jpg" />
+      <meta property="og:image" content="icon.jpg" />
       <meta
         property="og:url"
         content="https://mayaparteria-landing-page.vercel.app"
