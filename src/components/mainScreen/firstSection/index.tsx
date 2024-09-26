@@ -10,7 +10,7 @@ function FirstSection() {
         e pós parto.
       </p>
       <a
-        href="https://api.whatsapp.com/send?phone=5521965292855&text=Olá Samer, achei seu anuncio na internet, me chamo [ seu nome :D ], e gostaria de agendar uma avaliação."
+        href="https://api.whatsapp.com/send?phone=5521988344283&text=Olá Oi Maya, achei seu anuncio na internet, me chamo [ seu nome ], e gostaria de agendar uma avaliação."
         target="_blank"
         className={styles.box}
       >

@@ -8,12 +8,12 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className={styles.container}>
-      <Link href="tel:+5521965292855" className={styles.content}>
+      <Link href="tel:+5521988344283" className={styles.content}>
         <Image src={phone} alt="phone" width={20} height={20} />
-        <p>21 96529-2855</p>
+        <p>21 98834-4283</p>
       </Link>
       <Link
-        href="https://www.instagram.com/samerisbelle/"
+        href="https://www.instagram.com/maya.parteria/"
         target="_blank"
         className={styles.content}
       >

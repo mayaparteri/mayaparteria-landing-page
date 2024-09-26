@@ -5,20 +5,19 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fisiosamer.vercel.app"),
+  metadataBase: new URL("https://mayaparteria-landing-page.vercel.app"),
   alternates: {
     canonical: "/",
   },
-  title: "Dr. Samer Fisioterapia e Ortopedia",
-  description:
-    "Agende uma avaliação com o Dr. Samer, fisioterapeuta clínico especializado. Acesse nosso site e agende sua consulta a qualquer hora, em qualquer lugar. Saiba mais sobre nossos serviços!",
+  title: "Maya Parteria",
+  description: "Parto humanizado- Rio de Janeiro e Niterói- Maya Parteria. ",
   keywords:
-    "fisioterapia, zumbido, ortopedia, samer, tratament de dor persistente, tontura, consulta com fisioterapeuta",
+    "parto humanizado, parto domiciliar, parteira urbana, trabalho de parto, parto, Amamentação, pré natal, laser, laserterapia, doula",
   openGraph: {
     type: "website",
     locale: "pt-BR",
-    siteName: "Fisio Samer",
-    title: "Dr. Samer Fisioterapia e Ortopedia",
+    siteName: "Maya Parteria",
+    title: "Maya Parteria",
   },
 };
 
@@ -29,11 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <meta property="og:image" content="./icon.jpg" />
       <meta
-        property="og:image"
-        content="https://fisiosamer.com.br/opengraph-image.png"
+        property="og:url"
+        content="https://mayaparteria-landing-page.vercel.app"
       />
-      <meta property="og:url" content="https://fisiosamer.com.br/" />
       <body className={inter.className}>{children}</body>
     </html>
   );
