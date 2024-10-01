@@ -71,11 +71,11 @@ img {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #inicio {
     align-items: flex-end;
   }
-}
+} */
 
 .swiper-button-prev,
 .swiper-button-next {

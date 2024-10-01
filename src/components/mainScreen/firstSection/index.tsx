@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./firstSection.module.css";
 
+{
+  /* first section styles is in globals.css */
+}
+
 function FirstSection() {
   return (
     <div className={styles.content}>

@@ -18,7 +18,7 @@ function Footer() {
         className={styles.content}
       >
         <Image src={insta} alt="phone" width={20} height={20} />
-        <p> Instagram</p>
+        <p> @maya.parteria</p>
       </Link>
     </footer>
   );

@@ -11,28 +11,6 @@
   gap: 35px;
 }
 
-/* TODO: highlight header title */
-/* 
-.content::after {
-  content: "";
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  background: var(--primary);
-  box-shadow: 1px 1px 20px var(--primary);
-  transform: translate(10px, 10px);
-}
-
-.content::before {
-  content: "";
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  background: var(--secondary);
-  box-shadow: 1px 1px 20px var(--secondary);
-  transform: translate(-10px, -10px);
-} */
-
 .title {
   color: var(--white);
   text-shadow: 1px 1px 3px var(--shadow);
@@ -143,6 +121,7 @@
   .content {
     width: 100%;
     gap: 50px;
+    height: auto;
   }
 }
 

@@ -30,7 +30,6 @@
 }
 
 .image {
-  filter: saturate(0.5);
   object-fit: cover;
   width: 400px;
   height: 400px;
