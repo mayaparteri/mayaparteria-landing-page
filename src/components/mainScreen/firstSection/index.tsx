@@ -14,7 +14,7 @@ function FirstSection() {
         e pós parto.
       </p>
       <a
-        href="https://api.whatsapp.com/send?phone=5521988344283&text=Olá Oi Maya, achei seu anuncio na internet, me chamo [ seu nome ], e gostaria de agendar uma avaliação."
+        href="https://api.whatsapp.com/send?phone=5521988344283&text=Olá! Estou entrando em contato porque vi seu site e gostaria de mais informações sobre…"
         target="_blank"
         className={styles.box}
       >
