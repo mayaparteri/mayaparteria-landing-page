@@ -36,6 +36,10 @@ export default function RootLayout({
         property="og:url"
         content="https://mayaparteria-landing-page.vercel.app"
       />
+      <meta
+        name="google-site-verification"
+        content="LiVSJe5DIzqIn4t8Iak3RF0d1G7DTWQ2h8ShsdCFJPU"
+      />
       <body className={inter.className}>{children}</body>
     </html>
   );
