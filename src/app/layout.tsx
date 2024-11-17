@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,20 +42,21 @@ export default function RootLayout({
         content="LiVSJe5DIzqIn4t8Iak3RF0d1G7DTWQ2h8ShsdCFJPU"
       />
       {/* Google Tag Manager */}
-      <script>
+      <Script id="gtm-function" strategy="beforeInteractive">
         {
           "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NMLW3LQB')"
         }
-      </script>
-      <script
+      </Script>
+      <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-3V6LLD4XYG"
-      ></script>
-      <script>
+        strategy="beforeInteractive"
+      ></Script>
+      <Script id="gtm-track" strategy="beforeInteractive">
         {
           "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-3V6LLD4XYG');"
         }
-      </script>
+      </Script>
       {/*Google Tag Manager (noscript) */}
       <noscript>
         <iframe
@@ -64,6 +66,17 @@ export default function RootLayout({
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+      {/* Google tag manager */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-3V6LLD4XYG"
+        strategy="beforeInteractive"
+      ></Script>
+      <Script id="my-tag-manager" strategy="beforeInteractive">
+        {
+          "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-3V6LLD4XYG');"
+        }
+      </Script>
       <body className={inter.className}>{children}</body>
     </html>
   );
